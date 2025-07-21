@@ -1,0 +1,20 @@
+[package]
+name = "aggregator"
+version = "0.1.0"
+description = "Liquidity aggregation program for Solana Native Bridge"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "aggregator"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.31.1"
+anchor-spl = "0.31.1"

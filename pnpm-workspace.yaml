@@ -1,0 +1,14 @@
+packages:
+  - 'packages/*'
+
+# pnpm configuration
+shared-workspace-lockfile: true
+strict-peer-dependencies: false
+auto-install-peers: true
+
+# Build optimization
+engine-strict: true
+
+# Dependency hoisting (prevent phantom dependencies)
+hoist: true
+shamefully-hoist: false

@@ -1,0 +1,46 @@
+{
+  "name": "solana-native-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Production-grade Solana bridge for cross-program token interoperability",
+  "keywords": [
+    "solana",
+    "bridge",
+    "defi",
+    "cross-program",
+    "token-wrapping",
+    "liquidity-aggregation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "anchor:build": "cd packages/anchor && anchor build",
+    "anchor:test": "cd packages/anchor && anchor test",
+    "anchor:deploy": "cd packages/anchor && anchor deploy",
+    "sdk:build": "pnpm --filter sdk build",
+    "web:dev": "pnpm --filter web dev",
+    "setup": "pnpm install && pnpm build"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^3.0.0",
+    "turbo": "^2.5.5",
+    "typescript": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@9.1.0"
+}
