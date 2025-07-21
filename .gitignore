@@ -21,6 +21,9 @@ Thumbs.db
 .anchor/
 .keys/
 
+# Turbo
+.turbo/
+
 # Logs
 *.log
 npm-debug.log*
