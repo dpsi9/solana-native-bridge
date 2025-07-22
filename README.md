@@ -37,7 +37,7 @@ solana-native-bridge/
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/dpsi9/solana-native-bridge.git
 cd solana-native-bridge
 
 # Install dependencies
