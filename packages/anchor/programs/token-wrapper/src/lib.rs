@@ -18,4 +18,8 @@ pub mod token_wrapper {
     ) -> Result<()> {
         instructions::initialize::handler(ctx)
     }
+    /// Wrap tokens
+    pub fn wrap_token(ctx: Context<instructions::WrappedToken>, amount: u64)Result<()> {
+        instructions::wrap_token::handler(ctx, amount)
+    }
 }

@@ -4,4 +4,6 @@ use anchor_lang::prelude::*;
 pub enum TokenWrapperError {
     #[msg("Original mint and wrapped mint are same")]
     OriginalAndWrappedMintMatch,
+    #[msg("Insufficient token balance")]
+    InsufficientTokenBalance,
 }
