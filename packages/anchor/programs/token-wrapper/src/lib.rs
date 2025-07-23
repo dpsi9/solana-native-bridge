@@ -22,4 +22,9 @@ pub mod token_wrapper {
     pub fn wrap_token(ctx: Context<instructions::WrappedToken>, amount: u64) -> Result<()> {
         instructions::wrap_token::handler(ctx, amount)
     }
+
+    /// Unwrap tokens
+    pub fn unwrap_token(ctx: Context<instructions::UnwrappedTokens>, amount: u64) -> Result<()> {
+        instructions::unwrap_token::handler(ctx, amount)
+    }
 }
