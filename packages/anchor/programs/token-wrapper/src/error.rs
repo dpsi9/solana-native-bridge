@@ -6,4 +6,6 @@ pub enum TokenWrapperError {
     OriginalAndWrappedMintMatch,
     #[msg("Insufficient token balance")]
     InsufficientTokenBalance,
+    #[msg("Invalid amount")]
+    InvalidAmount
 }

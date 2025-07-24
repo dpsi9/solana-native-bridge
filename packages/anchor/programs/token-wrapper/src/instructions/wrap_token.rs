@@ -18,6 +18,8 @@ pub fn handler(ctx: Context<WrappedToken>, amount: u64) -> Result<()> {
         TokenWrapperError::InsufficientTokenBalance
     );
 
+    require!(amount > 0, TokenWrapperError::InvalidAmount);
+
     // Move tokens from user to vault
     token_interface::transfer_checked(
         CpiContext::new(
